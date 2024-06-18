@@ -1,0 +1,3 @@
+WHAT IS GIT - GIT is open source and free source contrl management (SCM).
+WITH GIT, you can manage changes and see what those changes were
+DOWNLOAN at git-scm.com
