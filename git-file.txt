@@ -1,3 +1,71 @@
 WHAT IS GIT - GIT is open source and free source contrl management (SCM).
 WITH GIT, you can manage changes and see what those changes were
 DOWNLOAN at git-scm.com
+git config -h  => ask for help from Git
+git help config  => more command (It opens up a manual)
+clear => to clear the command 
+TO CONFIGURE GIT TO YOUR OWNERSHIP DETAILS....
+git config --global user.name "victor ken adesope"
+git config --global user.email "victoradesope@gmail.com"
+git config --global color.ui auto => this enables command line coloring output
+git config -l
+TO INITIALIZE GIT ON YOUR FOLDER....
+cd => change directory (cd + filepath to folder)
+git init . => turn folder to git repository
+git status => tells us the status of our repository
+Note, if you dont track a file, git won't understand that youve made changes to the file
+TO TRACK A FILE ----
+git add filename
+To unstage(untrack) a file
+git rm --cached filename
+git add . => add all the file at once
+Note - all the files that are tracked are in an environment called staging area ready to commit
+Note - to commit means to rewrite your file in a history book. commit comes with a message.
+git commit -m "this is my first commit" => commit your file
+git diff => shows you the difference in the file you have modified
+press q => to go back/ exit or quit
+Note -  git has 3 working environment
+1. working files where you make edits
+2. staging where git is able to track your file to understand the changes
+3. commit where you put your changed file to the history book ready to push to Github
+TO REMOVE A FILE FROM THE STAGING AREA...
+git restore  --staged filename => remove from staging
+TO BYPASS STAGING AND COMMIT STRAIGHT---
+git commit -a -m "updated text to free range" => skip staging and commit directly
+git rm "git.css" => to delete file
+git restore "git.css" => to restore file back to folder
+Note - if you delete a file, you must unstage it to delete it finally
+git mv "filename" "a new filename" => to move from existing filename to a new
+git log => review all the commits you have made
+git log --oneline => abbreviated version of all the commit
+TO CHANGE THE STATEMENT OF YOUR COMMIT THAT WAS TYPED WRONGLY...
+git commit -m "change text change text" --amend => update your writeup in any commit 
+git log -p => see through the different changes in your commit
+git help log => brings out a manual that you can see through
+BRANCHES...
+git branch name => create a new branch
+git branch => confirm how many branch you have
+git switch "name" => switch to the other branch created
+git switch master => switch back to main branch after correction has been made on the second branch
+git merge -m "merge back to master" secondary-branch-name
+git branch -d seconday-branch-name => to delete the secondary branch created
+TO RESOLVE MERGE CONFLICTS.... 
+Note - if you make changes to a file in the secondary branch and you also make changes to that same
+file in the main branch, when you are about to merge, you will have a merge conflict
+git switch -c another => creates and switches to new branch
+git merge secondary-branch-name => another way to merge
+
+TIME TO GREATE A GITHUB ACCOUNT
+Note that Github allows you to collaborate with other people and work together.
+you can create a repo on git ( that's like a folder where you store all your file on the cloud)
+you can copy all of these below from your GITHUB
+git remote add origin git@github.com:victoradesope/kevinCookie.git => puh to your repo in the cloud
+git branch -M main
+git push -u origin main
+
+git push --all => push through all your branches
+git fetch => download all the remote tracking
+git merge => merge on your local machine
+git pull => combines the command fetch and merge
+
+
