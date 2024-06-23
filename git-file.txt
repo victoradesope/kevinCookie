@@ -13,6 +13,7 @@ TO INITIALIZE GIT ON YOUR FOLDER....
 cd => change directory (cd + filepath to folder)
 git init . => turn folder to git repository
 git status => tells us the status of our repository
+ls => check all the files you have in your folder
 Note, if you dont track a file, git won't understand that youve made changes to the file
 TO TRACK A FILE ----
 git add filename
@@ -42,6 +43,7 @@ TO CHANGE THE STATEMENT OF YOUR COMMIT THAT WAS TYPED WRONGLY...
 git commit -m "change text change text" --amend => update your writeup in any commit 
 git log -p => see through the different changes in your commit
 git help log => brings out a manual that you can see through
+git pull => pull request from github to your local machine
 BRANCHES...
 git branch name => create a new branch
 git branch => confirm how many branch you have
