@@ -46,7 +46,9 @@ git help log => brings out a manual that you can see through
 git pull => pull request from github to your local machine
 BRANCHES...
 git branch name => create a new branch
-git branch => confirm how many branch you have
+git branch => list the branches you are on on your local machine and which one is default
+git branch -r => check the total number of branch on your remote server (github)
+git branch -a => know the total branches on your local machine and on your remote server
 git switch "name" => switch to the other branch created
 git switch master => switch back to main branch after correction has been made on the second branch
 git merge -m "merge back to master" secondary-branch-name
@@ -65,10 +67,11 @@ git remote add origin git@github.com:victoradesope/kevinCookie.git => puh to you
 git branch -M main
 git push -u origin main
 
-git push --all => push through all your branches
+git push --all => push through all your branches to github
 git fetch => download all the remote tracking
 git merge => merge on your local machine
 git pull => combines the command fetch and merge
+git clone => copy your repository from your Github account to your local machine.
 
 set up SSH KEYS ......
 GENERATE A NEW SSH KEY - ssh-keygen -t ed25519 -C "your_email@example.com"
